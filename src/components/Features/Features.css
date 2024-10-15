@@ -1,0 +1,27 @@
+nav #features {
+    position: relative;
+}
+
+.side-menu #features {
+    position: relative;
+}
+
+nav .container .inner-links {
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+nav .container .features {
+    position: absolute;
+    right: 0;
+}
+
+nav .container .inner-links li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}

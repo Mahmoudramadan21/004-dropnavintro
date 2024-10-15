@@ -1,0 +1,90 @@
+nav .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo-links-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav .logo-links-wrapper h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+nav .logo-links-wrapper .links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+nav .logo-links-wrapper .links li {
+    cursor: pointer;
+}
+
+nav .logo-links-wrapper .links a {
+    margin-right: 7px;
+    font-size: 15px;
+    color: var(--Medium-Gray);
+    text-wrap: nowrap;
+    transition: 0.4s;
+}
+
+nav .logo-links-wrapper .links a:hover {
+    color: var(--Almost-Black);
+}
+
+nav .nav-auth a {
+    margin-right: 30px;
+    display: inline-block;
+    color: var(--Medium-Gray);
+    transition: 0.4s;
+}
+
+nav .nav-auth a:hover {
+    color: var(--Almost-Black);
+}
+
+nav .nav-auth .register {
+    margin-right: 0;
+    padding: 10px 15px;
+    border: 1px solid var(--Medium-Gray);
+    border-radius: 10px;
+}
+
+nav .nav-auth .register:hover {
+    border-color: var(--Almost-Black);
+}
+
+
+@media (max-width: 992px) {
+    nav .logo-links-wrapper .links {
+        gap: 20px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    nav .open-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .logo-links-wrapper .links {
+        display: none;
+    }
+
+    nav .nav-auth {
+        display: none;
+    }
+
+    nav .open-menu {
+        cursor: pointer;
+    }
+}
