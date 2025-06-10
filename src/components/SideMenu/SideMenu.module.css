@@ -1,0 +1,148 @@
+/**
+ * Styles for the SideMenu component, designed exclusively for mobile devices (screens < 768px).
+ */
+
+/* Side menu container */
+.sidemenu {
+  /* Layout */
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  /* Box Model */
+  width: 70%;
+  height: 100vh;
+  padding: 20px 15px 30px 30px;
+  gap: 20px;
+  /* Visual */
+  background-color: white;
+  right: -100%;
+  z-index: 10;
+  /* Transitions */
+  transition: right 0.3s;
+}
+
+/* Side menu open state */
+.sidemenu--open {
+  /* Layout */
+  right: 0;
+}
+
+/* Close icon container */
+.sidemenu__close {
+  /* Layout */
+  align-self: flex-end;
+  /* Box Model */
+  margin: 4px 3px;
+  /* Visual */
+  cursor: pointer;
+}
+
+/* Navigation links list */
+.sidemenu__links {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  /* Box Model */
+  gap: 15px;
+}
+
+/* Navigation list item */
+.sidemenu__item {
+  /* Visual */
+  cursor: pointer;
+}
+
+/* Navigation link */
+.sidemenu__link {
+  /* Box Model */
+  margin-right: 7px;
+  /* Typography */
+  font-size: 16px;
+  color: var(--Medium-Gray);
+  white-space: nowrap;
+  /* Transitions */
+  transition: color 0.3s;
+}
+
+/* Navigation link hover */
+.sidemenu__link:hover {
+  /* Typography */
+  color: var(--Almost-Black);
+}
+
+/* Sublist container for dropdowns */
+.sidemenu__sublist {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  /* Box Model */
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  /* Visual */
+  background-color: #fff;
+  z-index: 10;
+  list-style: none;
+}
+
+/* Overlay for background */
+.sidemenu__overlay {
+  /* Layout */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* Visual */
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+/* Authentication links container */
+.sidemenu__auth {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Box Model */
+  gap: 20px;
+}
+
+/* Authentication links */
+.sidemenu__auth-login,
+.sidemenu__auth-register {
+  /* Typography */
+  font-size: 16px;
+  color: var(--Medium-Gray);
+  white-space: nowrap;
+  /* Transitions */
+  transition: color 0.3s;
+}
+
+/* Authentication links hover */
+.sidemenu__auth-login:hover,
+.sidemenu__auth-register:hover {
+  /* Typography */
+  color: var(--Almost-Black);
+}
+
+/* Register button */
+.sidemenu__auth-register {
+  /* Layout */
+  display: block;
+  text-align: center;
+  /* Box Model */
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid var(--Medium-Gray);
+  border-radius: 10px;
+  /* Transitions */
+  transition: border-color 0.3s;
+}
+
+/* Register button hover */
+.sidemenu__auth-register:hover {
+  /* Box Model */
+  border-color: var(--Almost-Black);
+}

@@ -1,0 +1,63 @@
+/* Features navigation list container */
+.features__list {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  /* Box Model */
+  padding: 0;
+  gap: 8px;
+}
+
+/* Features list item */
+.features__item {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  /* Box Model */
+  padding: 8px 12px;
+  border-radius: 8px;
+  gap: 10px;
+  /* Transitions */
+  transition: background-color 0.2s;
+}
+
+/* Features icon container */
+.features__icon {
+  /* Box Model */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Features icon image */
+.features__icon-img {
+  /* Box Model */
+  width: 16px;
+  height: 16px;
+}
+
+/* Navigation link */
+.features__link {
+  /* Typography */
+  font-size: 14px;
+  color: var(--Almost-Black);
+  text-decoration: none;
+  /* Transitions */
+  transition: color 0.2s;
+}
+
+/* Navigation link hover */
+.features__link:hover {
+  /* Typography */
+  color: var(--Medium-Gray);
+}
+
+/* Item hover state */
+.features__item:hover {
+  /* Visual */
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,43 @@
+/* Company navigation list container */
+.company__list {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  /* Box Model */
+  padding: 0;
+  min-width: 100px;
+  gap: 8px;
+}
+
+/* Company list item */
+.company__item {
+  /* Layout */
+  display: block;
+  /* Box Model */
+  padding: 8px 12px;
+  border-radius: 8px;
+  /* Transitions */
+  transition: background-color 0.2s;
+}
+
+/* Navigation link */
+.company__link {
+  /* Typography */
+  font-size: 14px;
+  color: var(--Almost-Black);
+  text-decoration: none;
+  /* Transitions */
+  transition: color 0.2s;
+}
+
+/* Navigation link hover */
+.company__link:hover{
+  /* Typography */
+  color: var(--Medium-Gray);
+}
+
+/* Item hover state */
+.company__item:hover {
+  /* Visual */
+  background-color: #f5f5f5;
+}
