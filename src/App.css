@@ -1,37 +1,74 @@
 /* Start Global Rules */
+/**
+ * Define global CSS variables for consistent color usage throughout the application.
+ * These variables are used to maintain a cohesive color scheme.
+ */
 :root {
-  --Almost-White: hsl(0, 0%, 98%);
-  --Medium-Gray: hsl(0, 0%, 41%);
-  --Almost-Black: hsl(0, 0%, 8%);
+  --Almost-White: hsl(0, 0%, 98%); /* Light background color */
+  --Medium-Gray: hsl(0, 0%, 41%); /* Medium gray for text and borders */
+  --Almost-Black: hsl(0, 0%, 8%); /* Dark text color */
+  --Dark-Gray: hsl(0, 0%, 20%); /* Dark gray for focus outlines */
 }
 
+/**
+ * Enable smooth scrolling behavior for anchor links and other scroll actions.
+ */
 html {
   scroll-behavior: smooth;
 }
 
+/**
+ * Set the default font family to Epilogue sans-serif for the entire body.
+ */
 body {
   font-family: 'Epilogue', sans-serif;
 }
 
+/**
+ * Style the header element to ensure proper box-sizing and full-width layout.
+ */
 header {
   box-sizing: border-box;
+  width: 100%;
 }
 
-
+/**
+ * Apply universal reset for margin, padding, and box-sizing to all elements.
+ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/**
+ * Style for elements with visible focus to improve accessibility.
+ * Applies a distinct outline for keyboard navigation.
+ */
+*:focus-visible {
+  outline: 4px solid var(--Dark-Gray);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/**
+ * Remove default list styling from unordered lists.
+ */
 ul {
   list-style: none;
 }
 
+/**
+ * Remove default underline from anchor tags and ensure no text decoration.
+ */
 a {
   text-decoration: none;
 }
 
+/**
+ * Define the container class for responsive width and padding.
+ * This class centers content and adjusts width based on screen size.
+ */
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -39,22 +76,31 @@ a {
   margin-right: auto;
 }
 
-/* Small */
+/* Small screens (min-width: 767px) */
 @media (min-width: 767px) {
+  /**
+   * Set a fixed width of 750px for the container on small screens.
+   */
   .container {
     width: 750px;
   }
 }
 
-/* Medium */
+/* Medium screens (min-width: 992px) */
 @media (min-width: 992px) {
+  /**
+   * Set a fixed width of 970px for the container on medium screens.
+   */
   .container {
     width: 970px;
   }
 }
 
-/* Large */
+/* Large screens (min-width: 1200px) */
 @media (min-width: 1200px) {
+  /**
+   * Set a fixed width of 1170px for the container on large screens.
+   */
   .container {
     width: 1170px;
   }
