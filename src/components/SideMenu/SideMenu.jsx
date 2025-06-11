@@ -69,10 +69,7 @@ function SideMenu({ openMenu, setOpenMenu }) {
             <a
               href="#"
               className={styles.sidemenu__link}
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleFeatures();
-              }}
+              onClick={toggleFeatures}
               aria-expanded={openFeatures}
               aria-controls="features-menu"
               tabIndex={openMenu ? 0 : -1}
@@ -99,10 +96,7 @@ function SideMenu({ openMenu, setOpenMenu }) {
             <a
               href="#"
               className={styles.sidemenu__link}
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleCompany();
-              }}
+              onClick={toggleCompany}
               aria-expanded={openCompany}
               aria-controls="company-menu"
               tabIndex={openMenu ? 0 : -1}

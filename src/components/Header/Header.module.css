@@ -65,14 +65,16 @@
 
 /* Authentication links container */
 .header__auth a {
-  /* Box Model */
-  margin-right: 30px;
   /* Layout */
   display: inline-block;
   /* Typography */
   color: var(--Medium-Gray);
   /* Transitions */
   transition: color 0.4s;
+}
+.header__auth a:first-child {
+  /* Box Model */
+  margin-right: 30px;
 }
 
 /* Authentication links hover */
